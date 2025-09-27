@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESPDrone",
-    "project_version":    "0fd706f-dirty",
+    "project_version":    "574542a-dirty",
     "project_path":       "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone",
     "idf_path":           "/Users/thanh.huynh/esp-idf",
     "build_dir":          "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build",
@@ -185,7 +185,7 @@
             "dir": "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/components/core/crazyflie",
             "type": "LIBRARY",
             "lib": "__idf_crazyflie",
-            "reqs": [ "i2c_bus", "deck", "mpu6050", "ms5611", "hmc5883l", "pmw3901", "vl53l1", "vl53l0", "platform", "config", "led", "eeprom", "dsp_lib", "motors", "wifi", "adc", "esp_timer" ],
+            "reqs": [ "main", "i2c_bus", "deck", "mpu6050", "ms5611", "hmc5883l", "pmw3901", "vl53l1", "vl53l0", "platform", "config", "led", "eeprom", "dsp_lib", "motors", "wifi", "adc", "esp_timer" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -956,7 +956,7 @@
             "managed_priv_reqs": [],
             "file": "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/main/libmain.a",
             "sources": [ "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/main/main.c" ],
-            "include_dirs": [ "." ]
+            "include_dirs": [ ".", "interface" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2386,7 +2386,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "." ]
+            "include_dirs": [ ".", "interface" ]
         },
         "crazyflie": {
             "alias": "idf::crazyflie",
@@ -2394,35 +2394,11 @@
             "prefix": "idf",
             "dir": "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/components/core/crazyflie",
             "lib": "__idf_crazyflie",
-            "reqs": [ "i2c_bus", "deck", "mpu6050", "ms5611", "hmc5883l", "pmw3901", "vl53l1", "vl53l0", "platform", "config", "led", "eeprom", "dsp_lib", "motors", "wifi", "adc", "esp_timer" ],
+            "reqs": [ "main", "i2c_bus", "deck", "mpu6050", "ms5611", "hmc5883l", "pmw3901", "vl53l1", "vl53l0", "platform", "config", "led", "eeprom", "dsp_lib", "motors", "wifi", "adc", "esp_timer" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "./hal/interface", "./modules/interface", "./utils/interface" ]
-        },
-        "deck": {
-            "alias": "idf::deck",
-            "target": "___idf_deck",
-            "prefix": "idf",
-            "dir": "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/components/drivers/deck",
-            "lib": "__idf_deck",
-            "reqs": [],
-            "priv_reqs": [ "crazyflie", "config" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "include_dirs": [ ".", "include" ]
-        },
-        "i2c_bus": {
-            "alias": "idf::i2c_bus",
-            "target": "___idf_i2c_bus",
-            "prefix": "idf",
-            "dir": "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/components/drivers/i2c_bus",
-            "lib": "__idf_i2c_bus",
-            "reqs": [ "crazyflie", "platform", "driver" ],
-            "priv_reqs": [ "config" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
         },
         "adc": {
             "alias": "idf::adc",
@@ -2556,6 +2532,18 @@
             "managed_priv_reqs": [],
             "include_dirs": [ ".", "include", "core/inc" ]
         },
+        "i2c_bus": {
+            "alias": "idf::i2c_bus",
+            "target": "___idf_i2c_bus",
+            "prefix": "idf",
+            "dir": "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/components/drivers/i2c_bus",
+            "lib": "__idf_i2c_bus",
+            "reqs": [ "crazyflie", "platform", "driver" ],
+            "priv_reqs": [ "config" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
         "pmw3901": {
             "alias": "idf::pmw3901",
             "target": "___idf_pmw3901",
@@ -2567,6 +2555,18 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
+        },
+        "deck": {
+            "alias": "idf::deck",
+            "target": "___idf_deck",
+            "prefix": "idf",
+            "dir": "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/components/drivers/deck",
+            "lib": "__idf_deck",
+            "reqs": [],
+            "priv_reqs": [ "crazyflie", "config" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ ".", "include" ]
         },
         "dsp_lib": {
             "alias": "idf::dsp_lib",

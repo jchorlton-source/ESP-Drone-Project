@@ -3,20 +3,36 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-// Initialize the autonomous navigation module
-void autonavInit(void);
+// --- States ---
+typedef enum {
+  AUTONAV_IDLE = 0,
+  AUTONAV_RUNNING,
+  AUTONAV_HOLD_OBSTACLE,
+  AUTONAV_LANDING,
+  AUTONAV_LANDED,
+  AUTONAV_OVERRIDE
+} autonav_state_t;
 
-// Called periodically from the stabilizer loop
+// --- Shape IDs (for UI/commands) ---
+typedef enum {
+  AUTONAV_SHAPE_STOP = 0,
+  AUTONAV_SHAPE_SQUARE = 1,
+  AUTONAV_SHAPE_RECTANGLE = 2,
+  AUTONAV_SHAPE_OVAL = 3,
+  AUTONAV_SHAPE_TRIANGLE = 4
+} autonav_shape_t;
+
+// API
+void autonavInit(void);
 void autonavUpdate(uint32_t tickMs);
 
-// Start a shape flight
-void autonavStartShape(uint8_t shapeId);  
-// 0 = stop, 1 = square, 2 = circle
-
-// Reset the safety timer (called when any command is received)
+void autonavStartShape(uint8_t shapeId);   // 0 = stop, others = shapes
 void autonavKickSafety(void);
-
-// Obstacle sensor hook
 void autonavSetObstacle(bool detected);
 
-#endif
+autonav_state_t autonavGetState(void);
+
+// Manual override API
+void autonavEnableManualOverride(bool enable);
+void autonavEnterOverride(void);
+bool autonavIsOverride(void);
