@@ -132,6 +132,10 @@ static void commanderCrtpCB(CRTPPacket* pk)
       autonavStartShape(AUTONAV_SHAPE_TRIANGLE);
       break;
 
+    case 14: // Start Pentagon path
+      autonavStartShape(AUTONAV_SHAPE_PENTAGON);
+      break;  
+      
     case 20: // Enable manual override
       autonavEnableManualOverride(true);
       break;

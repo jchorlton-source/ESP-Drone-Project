@@ -14,6 +14,7 @@
 #define OBSTACLE_MAX_WAIT_MS          30000   // 30s blocked -> land
 #define LOOP_DT_S                     (0.01f) // if autonavUpdate() called at 100 Hz
 #define HOVER_THRUST_BASE             30000.0f// set for your frame after bench test
+
 // Altitude PID (thrust control)
 #define Z_KP 1.0f
 #define Z_KI 0.04f
@@ -175,6 +176,14 @@ void autonavUpdate(uint32_t tickMs){
             case 4: // Oval (approximate with sine wave)
                 sp.velocity.x = SHAPE_SPEED * cosf(tMs/1000.0f);
                 sp.velocity.y = (SHAPE_SPEED/2) * sinf(tMs/1000.0f);
+                break;
+	     case 5: // Pentagon
+                seg %= 5;
+                {
+                    float angle = seg * (2.0f * M_PI / 5.0f);  // 72° per side
+                    sp.velocity.x = SHAPE_SPEED * cosf(angle);
+                    sp.velocity.y = SHAPE_SPEED * sinf(angle);
+                }
                 break;
         }
     }
