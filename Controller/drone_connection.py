@@ -62,17 +62,42 @@ class DroneConnection:
             self.logger.info(f"Connecting to drone at {self.uri}...")
 
             # Create SyncCrazyflie instance for synchronous operations
-            self.scf = SyncCrazyflie(self.uri)
+            self.scf = SyncCrazyflie(self.uri, connection_timeout=5.0)
             self.scf.open_link()
             self.cf = self.scf.cf
 
+            # Verify connection by checking if we can get parameters
+            # The drone should respond to parameter requests if it's actually connected
+            self.logger.info("Verifying drone connection...")
+
+            # Try to access the parameter table of contents (TOC)
+            # This will fail if the drone is not actually responding
+            if not self.cf.param.is_updated:
+                # Wait up to 3 seconds for parameter TOC to be fetched
+                import time
+                timeout = 3.0
+                start_time = time.time()
+                while not self.cf.param.is_updated and (time.time() - start_time) < timeout:
+                    time.sleep(0.1)
+
+                if not self.cf.param.is_updated:
+                    raise Exception("Drone not responding - parameter TOC not received")
+
             self.connected = True
-            self.logger.info(f"Successfully connected to {self.uri}")
+            self.logger.info(f"Successfully connected and verified {self.uri}")
             return True
 
         except Exception as e:
             self.logger.error(f"Connection failed: {e}")
             self.connected = False
+            # Clean up if connection failed
+            if self.scf:
+                try:
+                    self.scf.close_link()
+                except:
+                    pass
+                self.scf = None
+            self.cf = None
             return False
 
     def disconnect(self):
