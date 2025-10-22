@@ -194,3 +194,49 @@ class DroneConnection:
         mode = "ENABLED" if enable else "DISABLED"
         self.logger.info(f"Manual override {mode}")
         self._send_autonav_command(cmd)
+
+    def send_manual_control(self, roll: float, pitch: float, yawrate: float, thrust: int):
+        """
+        Send manual control setpoint to the drone.
+
+        This must be called continuously (every 10ms recommended) to maintain control.
+        If setpoints stop arriving, the drone will automatically stop for safety.
+
+        Args:
+            roll: Roll angle in degrees (-30 to 30, positive = right)
+            pitch: Pitch angle in degrees (-30 to 30, positive = forward)
+            yawrate: Yaw rate in degrees/second (-200 to 200, positive = clockwise)
+            thrust: Thrust value (0 to 65535, where ~35000 = hover, 10001 = min)
+        """
+        if not self.is_connected():
+            self.logger.error("Cannot send manual control: not connected")
+            return
+
+        try:
+            # Clamp values to safe ranges
+            roll = max(-30, min(30, roll))
+            pitch = max(-30, min(30, pitch))
+            yawrate = max(-200, min(200, yawrate))
+            thrust = max(0, min(65535, thrust))
+
+            # Send setpoint via cflib commander
+            self.cf.commander.send_setpoint(roll, pitch, yawrate, thrust)
+
+        except Exception as e:
+            self.logger.error(f"Failed to send manual control: {e}")
+
+    def send_stop_setpoint(self):
+        """
+        Send stop setpoint to cut motors.
+
+        This is the proper way to stop manual control - it tells the drone
+        to stop the motors safely.
+        """
+        if not self.is_connected():
+            return
+
+        try:
+            self.cf.commander.send_stop_setpoint()
+            self.logger.info("Sent stop setpoint")
+        except Exception as e:
+            self.logger.error(f"Failed to send stop setpoint: {e}")
