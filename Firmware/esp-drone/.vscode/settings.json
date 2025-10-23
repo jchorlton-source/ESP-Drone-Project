@@ -11,5 +11,5 @@
     "--query-driver=/home/joe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
     "--compile-commands-dir=/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build"
   ],
-  "idf.flashType": "UART"
+  "idf.flashType": "JTAG"
 }
