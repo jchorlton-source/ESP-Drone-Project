@@ -1,1 +1,1 @@
-/Users/thanh.huynh/esp-idf/components/mbedtls/mbedtls/library/error.c
+/home/joe/esp/v5.2/esp-idf/components/mbedtls/mbedtls/library/error.c

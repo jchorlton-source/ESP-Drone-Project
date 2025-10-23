@@ -1,4 +1,4 @@
-/* * Data converted from /Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/thanh.huynh/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m
+# Install script for directory: /home/joe/esp/v5.2/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,24 +34,18 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/thanh.huynh/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/joe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ DIR_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/Users/thanh.huynh/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/:/Users/thanh.huynh/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ DIR_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/joe/esp/v5.2/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/:/home/joe/esp/v5.2/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ FILES "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ FILES "/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()

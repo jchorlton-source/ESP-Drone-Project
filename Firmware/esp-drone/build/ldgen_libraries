@@ -1,81 +1,83 @@
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/xtensa/libxtensa.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/efuse/libefuse.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_mm/libesp_mm.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/driver/libdriver.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_pm/libesp_pm.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/libmbedtls.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_app_format/libesp_app_format.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/bootloader_support/libbootloader_support.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_partition/libesp_partition.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/app_update/libapp_update.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/spi_flash/libspi_flash.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/pthread/libpthread.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_system/libesp_system.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_rom/libesp_rom.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/hal/libhal.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/log/liblog.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/heap/libheap.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/soc/libsoc.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_hw_support/libesp_hw_support.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/freertos/libfreertos.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/newlib/libnewlib.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/cxx/libcxx.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_common/libesp_common.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_timer/libesp_timer.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/app_trace/libapp_trace.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_event/libesp_event.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/nvs_flash/libnvs_flash.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_phy/libesp_phy.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/vfs/libvfs.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/lwip/liblwip.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_netif/libesp_netif.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_coex/libesp_coex.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_wifi/libesp_wifi.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/unity/libunity.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/cmock/libcmock.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/console/libconsole.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/http_parser/libhttp_parser.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp-tls/libesp-tls.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_adc/libesp_adc.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_eth/libesp_eth.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_hid/libesp_hid.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/tcp_transport/libtcp_transport.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_http_client/libesp_http_client.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_http_server/libesp_http_server.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_https_ota/libesp_https_ota.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_lcd/libesp_lcd.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/protobuf-c/libprotobuf-c.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/protocomm/libprotocomm.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/espcoredump/libespcoredump.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wear_levelling/libwear_levelling.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/sdmmc/libsdmmc.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/fatfs/libfatfs.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/json/libjson.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mqtt/libmqtt.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/perfmon/libperfmon.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/spiffs/libspiffs.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/main/libmain.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/motors/libmotors.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/platform/libplatform.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/i2c_bus/libi2c_bus.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/deck/libdeck.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mpu6050/libmpu6050.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/ms5611/libms5611.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/hmc5883l/libhmc5883l.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/pmw3901/libpmw3901.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/vl53l1/libvl53l1.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/vl53l0/libvl53l0.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/led/libled.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/eeprom/libeeprom.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/dsp_lib/libdsp_lib.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wifi/libwifi.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/adc/libadc.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/crazyflie/libcrazyflie.a
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/buzzer/libbuzzer.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/xtensa/libxtensa.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/efuse/libefuse.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_mm/libesp_mm.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/driver/libdriver.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_pm/libesp_pm.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mbedtls/libmbedtls.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_app_format/libesp_app_format.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/bootloader_support/libbootloader_support.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_partition/libesp_partition.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/app_update/libapp_update.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/spi_flash/libspi_flash.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/pthread/libpthread.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_system/libesp_system.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_rom/libesp_rom.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/hal/libhal.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/log/liblog.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/heap/libheap.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/soc/libsoc.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_hw_support/libesp_hw_support.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/freertos/libfreertos.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/newlib/libnewlib.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/cxx/libcxx.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_common/libesp_common.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_timer/libesp_timer.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/app_trace/libapp_trace.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_event/libesp_event.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/nvs_flash/libnvs_flash.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_phy/libesp_phy.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/vfs/libvfs.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/lwip/liblwip.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_netif/libesp_netif.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_coex/libesp_coex.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_wifi/libesp_wifi.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/unity/libunity.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/cmock/libcmock.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/console/libconsole.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/http_parser/libhttp_parser.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp-tls/libesp-tls.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_adc/libesp_adc.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_eth/libesp_eth.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_hid/libesp_hid.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/tcp_transport/libtcp_transport.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_http_client/libesp_http_client.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_http_server/libesp_http_server.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_https_ota/libesp_https_ota.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_lcd/libesp_lcd.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/protobuf-c/libprotobuf-c.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/protocomm/libprotocomm.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/espcoredump/libespcoredump.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wear_levelling/libwear_levelling.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/sdmmc/libsdmmc.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/fatfs/libfatfs.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/json/libjson.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mqtt/libmqtt.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/perfmon/libperfmon.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/spiffs/libspiffs.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/touch_element/libtouch_element.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/usb/libusb.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/main/libmain.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/motors/libmotors.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/platform/libplatform.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/i2c_bus/libi2c_bus.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/deck/libdeck.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/mpu6050/libmpu6050.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/ms5611/libms5611.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/hmc5883l/libhmc5883l.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/pmw3901/libpmw3901.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/vl53l1/libvl53l1.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/vl53l0/libvl53l0.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/led/libled.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/eeprom/libeeprom.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/dsp_lib/libdsp_lib.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/wifi/libwifi.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/adc/libadc.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/crazyflie/libcrazyflie.a
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/esp-idf/buzzer/libbuzzer.a

@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/CMakeFiles/bootloader
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/CMakeFiles/bootloader.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/CMakeFiles/bootloader-complete.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/Users/thanh.huynh/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/CMakeFiles/bootloader
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/CMakeFiles/bootloader.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/CMakeFiles/bootloader-complete.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/joe/github/Drone Project/ESP-Drone-Project/Firmware/esp-drone/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
