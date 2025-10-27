@@ -1,0 +1,2 @@
+source /home/joe/github/ESP-Drone-Project/build/gdbinit/symbols
+source /home/joe/github/ESP-Drone-Project/build/gdbinit/connect

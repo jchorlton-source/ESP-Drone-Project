@@ -1,2 +1,5 @@
 # ninja log v6
-33	4126	1761542967718159550	build.ninja	b7004a9ce64ac940
+28	4205	1761543590044446208	build.ninja	b7004a9ce64ac940
+31	4309	1761543590044446208	build.ninja	b7004a9ce64ac940
+27	223	1761543590150458284	CMakeFiles/confserver	e27d51211b5ee948
+27	223	1761543590150458284	/home/joe/github/ESP-Drone-Project/Firmware/esp-drone/build/CMakeFiles/confserver	e27d51211b5ee948

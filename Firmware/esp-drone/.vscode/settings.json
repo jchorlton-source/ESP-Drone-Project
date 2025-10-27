@@ -12,5 +12,6 @@
     "--compile-commands-dir=/home/joe/github/ESP-Drone-Project/Firmware/esp-drone/build"
   ],
   "idf.flashType": "JTAG",
-  "idf.port": "/dev/ttyACM0"
+  "idf.port": "/dev/ttyACM0",
+  "idf.currentSetup": "/home/joe/esp/v5.2/esp-idf"
 }
