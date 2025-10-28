@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "ESPDrone",
-    "project_version":    "25335f2-dirty",
+    "project_version":    "265aeaf-dirty",
     "project_path":       "/home/joe/github/ESP-Drone-Project",
     "idf_path":           "/home/joe/esp/v5.2/esp-idf",
     "build_dir":          "/home/joe/github/ESP-Drone-Project/build",

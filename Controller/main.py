@@ -83,6 +83,11 @@ class DroneControllerApp:
                                          command=self.disconnect, state='disabled')
         self.disconnect_btn.pack(side='left', padx=5)
 
+        # Test Motors Button (for testing connection)
+        self.test_motors_btn = ttk.Button(frame, text='Test Motors (5s)',
+                                          command=self.test_motors, state='disabled')
+        self.test_motors_btn.pack(side='right', padx=5)
+
         # Emergency Stop
         self.stop_btn = ttk.Button(frame, text='EMERGENCY STOP',
                                    command=self.emergency_stop, state='disabled')
@@ -169,8 +174,20 @@ class DroneControllerApp:
             messagebox.showerror("Error", "Please enter a valid port number")
             return
 
-        # Attempt connection
-        success = self.drone.connect(ip, port)
+        # Update status to show connecting
+        self.status_label.config(text=f"Status: Connecting to {ip}:{port}...",
+                               foreground="yellow")
+
+        # Disable connect button while connecting
+        self.connect_btn.config(state='disabled')
+
+        # Attempt connection (asynchronous - callback will be called)
+        self.drone.connect(ip, port, callback=lambda success, error: self._on_connection_result(success, error, ip, port))
+
+    def _on_connection_result(self, success, error, ip, port):
+        """Handle connection result callback."""
+        # Re-enable connect button
+        self.connect_btn.config(state='normal')
 
         if success:
             self.status_label.config(text=f"Status: Connected to {ip}:{port}",
@@ -179,12 +196,14 @@ class DroneControllerApp:
             messagebox.showinfo("Success", f"Connected to drone at {ip}:{port}")
         else:
             self.status_label.config(text="Status: Connection Failed", foreground="red")
-            messagebox.showerror("Error",
-                               f"Failed to connect to {ip}:{port}\n\n"
-                               "Make sure:\n"
-                               "1. You're connected to the drone's Wi-Fi (ESP-DRONE)\n"
-                               "2. The IP address is correct (usually 192.168.4.1)\n"
-                               "3. The drone is powered on")
+            error_msg = f"Failed to connect to {ip}:{port}"
+            if error:
+                error_msg += f"\n\nError: {error}"
+            error_msg += "\n\nMake sure:\n" \
+                        "1. You're connected to the drone's Wi-Fi (ESP-DRONE)\n" \
+                        "2. The IP address is correct (usually 192.168.4.1)\n" \
+                        "3. The drone is powered on"
+            messagebox.showerror("Error", error_msg)
 
     def disconnect(self):
         """Disconnect from the drone."""
@@ -209,6 +228,7 @@ class DroneControllerApp:
         self.stop_btn.config(state=state)
         self.altitude_btn.config(state=state)
         self.manual_control_btn.config(state=state)
+        self.test_motors_btn.config(state=state)
 
         # If disconnecting, stop manual control
         if not enabled and self.manual_control_active:
@@ -235,12 +255,49 @@ class DroneControllerApp:
             self.status_label.config(text=f"Status: Flying {shape_name}",
                                    foreground="blue")
 
+    def test_motors(self):
+        """Test motors by spinning them briefly at low thrust."""
+        if not self.drone.is_connected():
+            messagebox.showerror("Error", "Not connected to drone")
+            return
+
+        response = messagebox.askyesno(
+            "Test Motors",
+            "This will spin the motors at low thrust for 5 seconds.\n\n"
+            "⚠️ WARNING:\n"
+            "• Place drone on flat surface\n"
+            "• Ensure propellers are clear\n"
+            "• Be ready to disconnect if needed\n\n"
+            "Continue?"
+        )
+
+        if not response:
+            return
+
+        self.status_label.config(text="Status: Testing motors...", foreground="yellow")
+        self.test_motors_btn.config(state='disabled')
+
+        # Run motor test in background
+        import threading
+        def motor_test():
+            try:
+                self.drone.test_motors(duration=5.0)
+                self.root.after(0, lambda: self.status_label.config(
+                    text="Status: Motor test complete", foreground="green"))
+            except Exception as e:
+                self.root.after(0, lambda: self.status_label.config(
+                    text=f"Status: Motor test failed - {e}", foreground="red"))
+            finally:
+                self.root.after(0, lambda: self.test_motors_btn.config(state='normal'))
+
+        threading.Thread(target=motor_test, daemon=True).start()
+
     def emergency_stop(self):
         """Send emergency stop command."""
         if not self.drone.is_connected():
             return
 
-        self.drone.send_stop()
+        self.drone.send_stop_setpoint()
         self.status_label.config(text="Status: STOPPED", foreground="orange")
         messagebox.showwarning("Emergency Stop", "STOP command sent to drone!")
 

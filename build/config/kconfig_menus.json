@@ -6583,7 +6583,7 @@
                         "name": "MOTOR03_PIN",
                         "range": [
                             0,
-                            43
+                            49
                         ],
                         "title": "MOTOR03_PIN GPIO number",
                         "type": "int"
